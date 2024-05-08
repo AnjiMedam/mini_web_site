@@ -1,0 +1,48 @@
+ {% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <!-- Javascript links -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+      .round-img{
+        border-radius: 13px solid red;
+        background-size: cover;
+        /* width="35px" height="34px" style="border-radius: 12px solid green;" */
+        width: 35px;
+        height: 34px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="p-3 mb-2 bg-dark text-white"> 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="round-img" src="{% static 'D:\Python_Django\project_By_Django\mini_web_site\mystatic/logo.png' %}" alt="brandlogo" >
+          </a>
+          <a class="navbar-brand" href="{% url 'home' %}"><i>Anji Medam</i> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+           <!-- <img src= "{% static 'D:\Python_Django\project_By_Django\mini_web_site\mystatic/Anjilogo.png' %}" width="12px" height="18px" class="d-inline-block align-top" alt="Logo"> -->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+              <a class="nav-link" href="{% url 'skill' %}">Skillset</a>
+              <a class="nav-link" href="{% url 'about' %}">About</a>
+              <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>

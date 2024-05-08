@@ -1,0 +1,98 @@
+{% include 'Headbar.html'%}
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <!-- Javascript links -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <title>Anji Web</title>
+    <!-- Extra styles -->
+    <!-- <link rel="icon" type="image/png" href="{% static 'D:\Python_Django\project_By_Django\mini_web_site\mystatic/homefavicon.ico' %}"> -->
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.body-bg{
+    background-color: azure;
+    height: fit-content;
+    margin: auto;
+    height: 550px;
+
+}
+
+h4{
+    text-align: center;
+    color:orangered;
+}
+.text-danger{
+    margin-top: 1%;
+    text-align:center;
+}
+.addr{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+pre,p,ul{
+    padding-left: 30px;
+}
+@keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        h4::before {
+            content: "|";
+            display: inline-block;
+            width: 0;
+            animation: typing 35s steps(80, end) ;
+            animation-iteration-count: infinite;
+        }
+    </style>
+  </head>
+  <body>
+   <div class="body-bg" >
+   <h4>Software Developer</h4>
+
+   <pre> Hi,My name is Medam Anji Reddy,
+         I am a softeware developer,
+         curently i am looking a job based on my skillset..
+    </pre>
+    <p> I pursued my Graduation in Computer Science Engineering<br>
+        <span>i have knowledge on below programming Languages: </span>  
+    </p>
+    <ul>
+        <li>C </li><br><br>
+        <li>Core java</li><br><br>
+        <li>Python</li><br><br>
+        <li>Django ..etc</li><br><br>
+    </ul>
+
+   </div>
+   <div style="color: maroon;"> 
+    <footer>
+        <address class="addr">
+            Current Address:<br>
+            KPHB Colony,<br>
+            Addagutta Society Pragathi nagar Road,<br>
+            Hyderabad,500085<br>
+            <a href="mailto:anjireddy495521@gmail.com ?">Sent me </a>
+        </address>
+        <p class="text-danger">copy @ rights</p>
+    </footer>
+    </div>
+  </body>
+</html>
